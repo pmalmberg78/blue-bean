@@ -1,5 +1,6 @@
 name: bluebuild
-#on:
+on:
+
 #  schedule:
 #    - cron:
 #        "00 06 * * *" # build at 06:00 UTC every day
