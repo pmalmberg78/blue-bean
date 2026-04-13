@@ -33,9 +33,14 @@ modules:
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
   
   # Install ZFS support
-  - type: script
-    scripts:
-      - zfs.sh
+  - type: dnf
+    repos:
+      files:
+        add:
+          - https://zfsonlinux.org/fedora/zfs-release-3-0.fc43.noarch.rpm
+    install:
+      packages:
+        - zfs
       
   # Install niri wm
 #  - type: script
