@@ -34,11 +34,9 @@ modules:
   
   # Install ZFS support
   - type: dnf
-    repos:
-      files:
-        - https://zfsonlinux.org/fedora/zfs-release-3-0.fc43.noarch.rpm
     install:
       packages:
+        - https://zfsonlinux.org/fedora/zfs-release-3-0.fc43.noarch.rpm
         - zfs
       
   # Install niri wm
