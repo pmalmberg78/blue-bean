@@ -38,9 +38,9 @@ modules:
       - zfs.sh
       
   # Install niri wm
-  - type: script
-    scripts:
-      - niri.sh
+#  - type: script
+#    scripts:
+#      - niri.sh
       
   - type: default-flatpaks
     configurations:
