@@ -4,7 +4,7 @@ if rpm -q --quiet zfs-fuse; then
 fi
 
 # Install zfs-release RPM (expand distro macro at runtime)
-dnf install -y https://zfsonlinux.org/fedora/zfs-release-3-0$(rpm --eval "%{dist}").noarch.rpm
+dnf install -y https://zfsonlinux.org/fedora/zfs-release-3-0.fc43.noarch.rpm
 
 dnf install -y zfs
 
