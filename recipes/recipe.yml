@@ -36,8 +36,7 @@ modules:
   - type: dnf
     repos:
       files:
-        add:
-          - https://zfsonlinux.org/fedora/zfs-release-3-0.fc43.noarch.rpm
+        - https://zfsonlinux.org/fedora/zfs-release-3-0.fc43.noarch.rpm
     install:
       packages:
         - zfs
