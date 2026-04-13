@@ -1,5 +1,6 @@
 name: bluebuild
 on:
+
 #  schedule:
 #    - cron:
 #        "00 06 * * *" # build at 06:00 UTC every day
@@ -8,8 +9,8 @@ on:
 #    paths-ignore: # don't rebuild if only documentation has changed
 #      - "**.md"
 
-  pull_request:
-  workflow_dispatch: # allow manually triggering builds
+#  pull_request:
+#  workflow_dispatch: # allow manually triggering builds
 concurrency:
   # only run one build at a time
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
